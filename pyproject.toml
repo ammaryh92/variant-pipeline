@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "variant_pipeline"
+authors = [
+    {name = "Ammar Haggag", email = "ayh17101992@gmail.com"},
+]
+description = "VCF parsing, storage and ClinVar/dbSNP annotation pipeline for germline variants"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+classifiers = [
+    "Programming Language :: Python :: 3", "Private :: Do Not Upload"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "mypy"]
